@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML tabs with hash tags</title>
+		<link media="screen" rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="javascript/jquery-1.11.3.min.js"></script>
+		<script src="javascript/jquery.hash-tabs.min.js"></script>
+	</head>
+	<body>
+<section id="simple-example">
+	<div class="example">
+		<div class="example1 hash-tabs">
+			<article class="tab-container">
+				<nav class="tab-nav" role="tablist">
+					<li>
+						<a href="#renewable_energy" class="renewable_energy" title="Renewable Energy" id="0" role="tab" aria-selected="false" aria-expanded="false" aria-controls="#renewable_energy" tab-index="-1">Renewable Energy</a>
+					</li>
+					<li>
+						<a href="#management" class="management" title="Management" id="1" role="tab" aria-selected="false" aria-expanded="false" aria-controls="#management" tab-index="-1">Management</a>
+					</li>
+					<li>
+						<a href="#designs" class="designs" title="Designs" id="2" role="tab" aria-selected="false" aria-expanded="false" aria-controls="#designs" tab-index="-1">Designs</a>
+					</li>
+					<li>
+						<a href="#construction" class="construction" title="Construction" id="3" role="tab" aria-selected="false" aria-expanded="false" aria-controls="#construction" tab-index="-1">Construction</a>
+					</li>
+				</nav>
+				<div class="tab-pane-container">
+					<section id="renewable_energy" role="tabpanel" aria-labeledby="0" style="display: block;">
+						This is Renewable energy section
+					</section>
+					<section id="management" role="tabpanel" aria-labeledby="1" style="display: none;">
+						This is management section
+					</section>
+					<section id="designs" role="tabpanel" aria-labeledby="2" style="display: none;">
+						This is design section
+					</section>
+					<section id="construction" role="tabpanel" aria-labeledby="3" style="display: none;">
+						This is construction section
+					</section>
+				</div>
+			</article>
+		</div>
+	</div>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			var $tabs = $(".example1").hashTabs({
+				enabled: true
+			});
+			
+		});
+	</script>
+</section>
+							
+	</body>
+</html>

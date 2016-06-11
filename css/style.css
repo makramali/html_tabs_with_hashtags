@@ -1,0 +1,38 @@
+body
+{
+	margin:0px;
+	font-family: tahoma, sans-serif;
+	font-size:11px;
+}
+
+#simple-example
+{
+	margin:10px auto;
+	width:600px;
+}
+
+.example1 nav.tab-nav li 
+{
+	display:inline;
+}
+
+.example1 nav.tab-nav li a
+{
+	font-size:14px;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px 20px;
+	border:1px solid #333;
+	line-height: 2.6;
+}
+
+.example1 nav.tab-nav li a.active
+{
+	font-weight:bold;
+}
+
+.example1 .tab-pane-container
+{
+	padding: 20px;
+	border:1px solid #333;
+}
